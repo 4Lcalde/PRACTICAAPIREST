@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 const peleadorSchema = new mongoose.Schema(
   {
-    Name: { type: String, required: true },
+    Name: { type: String, required: true, unique: true },
     Sport: { type: String, required: true },
     Age: { type: Number, required: true }
   },
